@@ -1,4 +1,4 @@
-# Modern C++ Compile-Time Programming: A Complete Reference
+# Enum Classes and Modern C++ Compile-Time Programming
 
 ## 📑 Table of Contents
 

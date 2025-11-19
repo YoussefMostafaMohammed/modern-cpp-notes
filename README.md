@@ -1,7 +1,7 @@
 # modern-cpp-notes
 
 This repository contains personal study notes and practical examples for **Modern C++** (C++11–C++23).  
-It covers Object-Oriented Programming, Smart Pointers, Templates, and Value Categories (lvalues, rvalues, universal references).  
+It covers Object-Oriented Programming, Smart Pointers, Templates, Value Categories (lvalues, rvalues, universal references), and Compile-Time Programming with `enum class` and `constexpr`.  
 
 Think of this as a mini-book for modern C++ concepts, with a clickable Table of Contents for easy navigation.
 
@@ -69,6 +69,19 @@ Think of this as a mini-book for modern C++ concepts, with a clickable Table of 
 - [Printing `T` and `arg` Types](4%20-%20Lvalue-Rvalue-UniversalReference/Lvalue-Rvalue-UniversalReference.md#11-printing-t-and-arg-type)
 - [Advanced Topics & Best Practices](4%20-%20Lvalue-Rvalue-UniversalReference/Lvalue-Rvalue-UniversalReference.md#16-advanced-topics)
 - [Visual ASCII Diagram: The Full Flow](4%20-%20Lvalue-Rvalue-UniversalReference/Lvalue-Rvalue-UniversalReference.md#20-visual-ascii-diagram-the-full-flow)
+
+### **5. Enum Classes & Compile-Time Programming**
+- [5.1 Enum Classes vs Traditional Enums](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#51-enum-classes-vs-traditional-enums)
+- [5.2 The Three Critical Problems with Traditional Enums](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#52-the-three-critical-problems-with-traditional-enums)
+- [5.3 Enum Class Features and Benefits](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#53-enum-class-features-and-benefits)
+- [5.4 What `constexpr` Actually Does](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#54-what-constexpr-actually-does)
+- [5.5 The Evolution of `constexpr` Across C++ Standards](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#55-the-evolution-of-constexpr-across-c-standards)
+- [5.6 `constexpr` vs `const` vs `#define`: The Complete Triad](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#56-constexpr-vs-const-vs-define)
+- [5.7 Performance Impact and Assembly-Level Analysis](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#57-performance-impact-and-assembly-level-analysis)
+- [5.8 Side Effects and Purity in Compile-Time Contexts](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#58-side-effects-and-purity)
+- [5.9 Template Metaprogramming - The Pre-`constexpr` Era](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#59-template-metaprogramming)
+- [5.10 Declaration vs Definition - The Linker's Perspective](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#510-declaration-vs-definition)
+- [5.11 C++17: The `inline` Revolution](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#511-c17-the-inline-revolution)
 
 ---
 

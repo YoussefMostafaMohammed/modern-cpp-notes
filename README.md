@@ -83,6 +83,33 @@ Think of this as a mini-book for modern C++ concepts, with a clickable Table of 
 - [5.10 Declaration vs Definition - The Linker's Perspective](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#510-declaration-vs-definition)
 - [5.11 C++17: The `inline` Revolution](5%20-%20EnumClass-Constexpr/EnumClass-Constexpr.md#511-c17-the-inline-revolution)
 
+### **6. Functors, Lambdas & Compile-Time Customizability**
+- [6.1 Designing for Reusability in Modern C++](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#61-designing-for-reusability-in-modern-c)
+- [6.2 Customizability through Callbacks](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#62-customizability-through-callbacks)
+- [6.3 What Is a Callback?](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#63-what-is-a-callback)
+- [6.4 Types of Callbacks in C++](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#64-types-of-callbacks-in-c)
+- [6.5 Why Were Functors Invented? (Historical Context)](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#65-why-were-functors-invented-historical-context)
+- [6.6 Problem 1 – "Piping State" into Predicates](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#66-problem-1--piping-state-into-predicates)
+- [6.7 Problem 2 – Function Pointers "Kill Inlining"](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#67-problem-2--function-pointers-kill-inlining)
+- [6.8 Problem 3 – Overload Sets & Template Operators](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#68-problem-3--overload-sets--template-operators)
+- [6.9 Functors: The Foundation](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#69-functors-the-foundation)
+- [6.10 Lambdas: Compiler-Generated Functors](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#610-lambdas-compiler-generated-functors)
+- [6.11 std::function: Type-Erased Wrapper](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#611-stdfunction-type-erased-wrapper)
+- [6.12 Performance Deep Dive – Assembly & Benchmarks](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#612-performance-deep-dive--assembly--benchmarks)
+- [6.13 Summary Table – Callback Types](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#613-summary-table--callback-types)
+- [6.14 Customizability through Template Parameters](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#614-customizability-through-template-parameters)
+- [6.15 Templates with Callable Parameters](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#615-templates-with-callable-parameters)
+- [6.16 Templates with Types (Policy Classes)](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#616-templates-with-types-policy-classes)
+- [6.17 Why Template Customizability Matters](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#617-why-template-customizability-matters)
+- [6.18 Concepts (C++20)](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#618-concepts-c20)
+- [6.19 Comparison: When to Use What](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#619-comparison-when-to-use-what)
+- [6.20 Modern C++ Best Practices](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#620-modern-c-best-practices)
+- [6.21 Real-World Idiomatic Patterns](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#621-real-world-idiomatic-patterns)
+- [6.22 Decision Tree – Which One Should I Pick?](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#622-decision-tree--which-one-should-i-pick)
+- [6.23 Complete Example – Flexible Logger System](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#623-complete-example--flexible-logger-system)
+- [6.24 Key Takeaways](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#624-key-takeaways)
+- [6.25 Further Reading & Sources](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#625-further-reading--sources)
+
 ---
 
 ## License

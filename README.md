@@ -1,7 +1,7 @@
 # modern-cpp-notes
 
 This repository contains personal study notes and practical examples for **Modern C++** (C++11–C++23).  
-It covers Object-Oriented Programming, Smart Pointers, Templates, Value Categories (lvalues, rvalues, universal references), and Compile-Time Programming with `enum class` and `constexpr`.  
+It covers Object-Oriented Programming, Smart Pointers, Templates, Value Categories (lvalues, rvalues, universal references), Compile-Time Programming with `enum class` and `constexpr`, and Critical Modern Features like `inline`, `using`, and `noexcept`.
 
 Think of this as a mini-book for modern C++ concepts, with a clickable Table of Contents for easy navigation.
 
@@ -109,6 +109,50 @@ Think of this as a mini-book for modern C++ concepts, with a clickable Table of 
 - [6.23 Complete Example – Flexible Logger System](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#623-complete-example--flexible-logger-system)
 - [6.24 Key Takeaways](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#624-key-takeaways)
 - [6.25 Further Reading & Sources](6%20-%20FunctorsAndLambda/FunctorsAndLambda.md#625-further-reading--sources)
+
+### **7. Inline, Using, and Noexcept - Critical Modern Features **
+- [ 7.1 The Three Features That Solve Decades-Old Problems ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#71-the-three-features-that-solve-decades-old-problems)
+- [ 7.2 ` inline ` Variables - Solving the ODR Nightmare ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#72-inline-variables-solving-the-odr-nightmare)
+- [ 7.3 The Problem: Static Initialization Hell ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#73-the-problem-static-initialization-hell)
+- [ 7.4 Before C++17: Two Bad Options ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#74-before-c17-two-bad-options)
+- [ 7.5 After C++17: The ` inline ` Solution ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#75-after-c17-the-inline-solution)
+- [ 7.6 ` using ` Type Aliases - Replacing ` typedef ` ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#76-using-type-aliases-replacing-typedef)
+- [ 7.7 The Readability Problem with ` typedef ` ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#77-the-readability-problem-with-typedef)
+- [ 7.8 Template Aliases: The Game Changer ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#78-template-aliases-the-game-changer)
+- [ 7.9 Template Parameter Evaluation: The Correct Mental Model ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#79-template-parameter-evaluation-the-correct-mental-model)
+- [ 7.10 Common Confusion: Why Not ` std::vector<T><int> `? ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#710-common-confusion-why-not-stdvectortint)
+- [ 7.11 ` noexcept ` - The Savior of Move Semantics ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#711-noexcept-the-savior-of-move-semantics)
+- [ 7.12 What ` noexcept ` Does ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#712-what-noexcept-does)
+- [ 7.13 The ` throw() ` Disaster (Pre-C++11) ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#713-the-throw-disaster-pre-c11)
+- [ 7.14 Three Critical Reasons for ` noexcept ` ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#714-three-critical-reasons-for-noexcept)
+- [ 7.15 Reason 1: Enable Move Semantics ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#715-reason-1-enable-move-semantics)
+- [ 7.16 Move Semantics and Exception Safety - Deep Dive ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#716-move-semantics-and-exception-safety-deep-dive)
+- [ 7.17 Why ` std::vector ` Refuses Throwing Moves ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#717-why-stdvector-refuses-throwing-moves)
+- [ 7.18 The Strong Exception Guarantee ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#718-the-strong-exception-guarantee)
+- [ 7.19 Scenario: Throwing Move (Corrupted State) ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#719-scenario-throwing-move-corrupted-state)
+- [ 7.20 Scenario: Copy (Safe State) ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#720-scenario-copy-safe-state)
+- [ 7.21 Complete Code Example - Resource Class ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#721-complete-code-example-resource-class)
+- [ 7.22 Expected Output - Proving Vector Uses Copies ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#722-expected-output---proving-vector-uses-copies)
+- [ 7.23 The Fix: Adding ` noexcept ` ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#723-the-fix-adding-noexcept)
+- [ 7.24 Performance Impact: 100x Speedup ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#724-performance-impact-100x-speedup)
+- [ 7.25 The Moved-From State - Why ` nullptr ` is Mandatory ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#725-the-moved-from-state-why-nullptr-is-mandatory)
+- [ 7.26 The Move Constructor Implementation Explained ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#726-the-move-constructor-implementation-explained)
+- [ 7.27 Double-Free Prevention Rule ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#727-double-free-prevention-rule)
+- [ 7.28 Exception Safety in Move Constructors ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#728-exception-safety-in-move-constructors)
+- [ 7.29 The State Timeline During Move ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#729-the-state-timeline-during-move)
+- [ 7.30 ` std::move_if_noexcept ` - Conditional Move vs Copy ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#730-stdmove_if_noexcept---conditional-move-vs-copy)
+- [ 7.31 What ` std::move_if_noexcept ` Does ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#731-what-stdmove_if_noexcept-does)
+- [ 7.32 Implementation Details ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#732-implementation-details)
+- [ 7.33 How It Works - Step by Step ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#733-how-it-works---step-by-step)
+- [ 7.34 Where the Standard Library Uses It ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#734-where-the-standard-library-uses-it)
+- [ 7.35 ` std::swap ` Implementation ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#735-stdswap-implementation)
+- [ 7.36 ` std::vector::resize ` Internal Logic ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#736-stdvectorresize-internal-logic)
+- [ 7.37 Performance Comparison: Heavy vs LightButThrowy ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#737-performance-comparison-heavy-vs-lightbutthrowy)
+- [ 7.38 Best Practices and Guidelines ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#738-best-practices-and-guidelines)
+- [ 7.39 Complete Examples Collection ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#739-complete-examples-collection)
+- [ 7.40 Summary Tables - Quick Reference ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#740-summary-tables---quick-reference)
+- [ 7.41 Q&A Summary - All Key Questions Answered ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#741-qa-summary---all-key-questions-answered)
+- [ 7.42 Further Reading & Sources ](7%20-%20InlineUsingNoexcept/InlineUsingNoexcept.md#742-further-reading--sources)
 
 ---
 

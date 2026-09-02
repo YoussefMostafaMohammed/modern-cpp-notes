@@ -1,7 +1,3 @@
-Absolutely! I can keep **all your existing content intact** and **add a detailed introduction section** that explains the **difference between raw pointers and smart pointers**, with more insights, advantages, and context for interviews. Here's the **enhanced README** with the added introduction and expanded content while keeping the rest exactly as you wrote:
-
----
-
 # Smart Pointers in Modern C++
 
 Smart pointers are **RAII (Resource Acquisition Is Initialization)** objects that automatically manage dynamically allocated memory.  
